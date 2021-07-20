@@ -1,0 +1,36 @@
+@import "./variables.css";
+@import "./header.css";
+@import "./section.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--colorTunder);
+  color: var(--colorWhite);
+  min-block-size: 200vh;
+  font-family: var(--fontFamilyNunito);
+  font-size: 17px;
+  margin: 0;
+}
+
+.container {
+  inline-size: 636px;
+  margin: auto;
+}
+
+.main-content {
+  padding: 16px;
+}
+
+.decorator {
+  background: var(--headerGradient);
+  height: 96px;
+}
+
+@media screen and (min-width: 768px) {
+  .decorator {
+    height: 350px;
+  }
+}

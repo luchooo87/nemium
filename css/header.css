@@ -1,0 +1,31 @@
+header {
+  width: 200px;
+  position: absolute;
+  left: -232px;
+  top: 64px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+nav ol li a {
+  text-decoration: none;
+  color: var(--colorShadyLady);
+}
+
+.is-active {
+  background: var(--colorBlack);
+}
+
+@media screen and (min-width: 768px) {
+}
