@@ -1,7 +1,7 @@
 header {
-  width: 200px;
+  inline-size: 200px;
   position: absolute;
-  left: -232px;
+  left: -300px;
   top: 64px;
 }
 
@@ -18,8 +18,20 @@ header {
   list-style: none;
 }
 
+.header li {
+  margin-block-end: 16px;
+}
+
 nav ol li a {
   text-decoration: none;
+  color: var(--colorShadyLady);
+}
+
+nav ol li a:hover {
+  color: var(--colorWhite);
+}
+
+nav ol li {
   color: var(--colorShadyLady);
 }
 
