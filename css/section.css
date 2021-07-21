@@ -125,6 +125,35 @@ pre {
   padding: 16px;
 } */
 
+.slider-container {
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.bullets {
+  margin-block-start: 16px;
+  text-align: center;
+}
+
+.bullet {
+  background: var(--colorWhite);
+  display: inline-block;
+  inline-size: 16px;
+  block-size: 16px;
+  border-radius: 50%;
+}
+
 .variant li {
   padding: 8px;
 }
