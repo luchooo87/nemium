@@ -7,9 +7,13 @@ summary p {
 }
 
 h1 {
-  margin-block-start: 64px;
+  margin-block-start: 48px;
   margin-block-end: 16px;
-  font-size: 64px;
+}
+
+h1,
+h2 {
+  font-size: 24px;
 }
 
 h1 + p {
@@ -19,12 +23,11 @@ h1 + p {
 
 h2 {
   margin-block: 40px;
-  font-size: 40px;
 }
 
 h3 {
   margin-block: 16px;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -50,7 +53,7 @@ blockquote {
   margin-block-start: 80px;
   margin-block-end: 63px;
   margin-inline: 0;
-  font-size: 24px;
+  font-size: 17px;
 }
 
 blockquote span::before {
@@ -78,14 +81,6 @@ blockquote p {
   content: counter(titleList) ". ";
 }
 
-/* .section-content h3::after {
-  content: "";
-  width: 32px;
-  height: 4px;
-  background: var(--colorWhite);
-  display: inline-block;
-} */
-
 .section-content img {
   margin-block-start: 40px;
   max-inline-size: 100%;
@@ -99,31 +94,6 @@ blockquote p {
 .section-content ul li {
   margin-block-end: 16px;
 }
-
-/* p {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
-  color: var(--colorShadyLady);
-  margin-block-end: 16px;
-}
-
-blockquote {
-  background: var(--colorTunder2);
-  padding: 8px;
-  border-radius: 8px;
-  margin-block: 40px;
-}
-
-blockquote p {
-  color: var(--colorWhite);
-}
-
-pre {
-  background: var(--colorTunder2);
-  border-radius: 8px;
-  padding: 16px;
-} */
 
 .slider-container {
   display: block;
@@ -147,16 +117,79 @@ pre {
 }
 
 .bullet {
-  background: var(--colorWhite);
+  background: #42424233;
   display: inline-block;
   inline-size: 16px;
   block-size: 16px;
   border-radius: 50%;
 }
 
+.bullet:hover,
+.bullet-is-select {
+  background: var(--colorWhite);
+}
+
 .variant li {
   padding: 8px;
 }
 
-@media screen and (min-width: 768px) {
+.info {
+  color: var(--colorWhite);
+}
+
+.info a {
+  font-family: var(--fontFamilyRoboto);
+  font-size: 17px;
+}
+
+.form input {
+  inline-size: 100%;
+  border: 1px solid var(--colorWhite);
+  border-radius: 8px;
+  background: var(--colorTunder);
+  color: var(--colorWhite);
+  padding-inline: 16px;
+  padding-block: 12px;
+  font-size: 16px;
+  font-family: var(--fontFamilyNunito);
+  display: block;
+  margin-block-end: 24px;
+  box-sizing: border-box;
+}
+
+.form input::placeholder {
+  color: var(--colorWhite);
+}
+
+.form input[type="submit"] {
+  background: var(--colorDogerBlue);
+  font-weight: 700;
+  border: none;
+}
+
+.newsletter {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    margin-block-start: 64px;
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  blockquote {
+    font-size: 24px;
+  }
+
+  .newsletter {
+    font-size: 24px;
+  }
 }

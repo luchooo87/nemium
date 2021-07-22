@@ -1,17 +1,9 @@
 header {
-  inline-size: 200px;
-  position: absolute;
-  left: -300px;
-  top: 64px;
-}
-
-.header {
-  position: sticky;
-  top: 0;
+  margin-block-start: 16px;
 }
 
 .header-content {
-  position: relative;
+  padding-inline: 16px;
 }
 
 .header ul li {
@@ -39,5 +31,21 @@ nav ol li {
   background: var(--colorBlack);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1366px) {
+  header {
+    inline-size: 200px;
+    position: absolute;
+    left: -300px;
+    top: 64px;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+  }
+
+  .header-content {
+    position: relative;
+    padding-inline: 0;
+  }
 }
