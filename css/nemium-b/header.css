@@ -1,0 +1,51 @@
+header {
+  margin-block-start: 16px;
+}
+
+.header-content {
+  padding-inline: 16px;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.header li {
+  margin-block-end: 16px;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--colorShadyLady);
+}
+
+li a:hover {
+  color: var(--colorWhite);
+}
+
+li {
+  color: var(--colorShadyLady);
+}
+
+.is-active {
+  background: var(--colorBlack);
+}
+
+@media screen and (min-width: 1366px) {
+  header {
+    inline-size: 200px;
+    position: absolute;
+    left: -300px;
+    top: 64px;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+  }
+
+  .header-content {
+    position: relative;
+    padding-inline: 0;
+  }
+}

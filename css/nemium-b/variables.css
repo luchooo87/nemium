@@ -1,0 +1,14 @@
+:root {
+  --fontFamilyRoboto: "Roboto", sans-serif;
+  --fontFamilyNunito: "Nunito", sans-serif;
+
+  --colorWhite: #fff;
+  --colorBlack: #000;
+  --colorTunder: #251f24;
+  --colorTunder2: #3a3539;
+  --colorShadyLady: #a5a3a5;
+  --colorDogerBlue: #157efb;
+  --colorGray: rgba(97, 97, 97, 0.2);
+
+  --headerGradient: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+}
