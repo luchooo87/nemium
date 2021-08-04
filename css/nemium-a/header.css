@@ -1,0 +1,81 @@
+header {
+  margin-block-start: 0;
+}
+
+.header-content {
+  padding-inline: 16px;
+  position: relative;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.header li {
+  margin-block-end: 16px;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--colorShadyLady);
+}
+
+li a:hover {
+  color: var(--colorBlack);
+}
+
+li {
+  color: var(--colorShadyLady);
+}
+
+.is-active {
+  background: var(--colorBlack);
+  color: var(--colorWhite);
+}
+
+summary {
+  list-style-image: url("../../icons/light/expand_arrow-front.svg");
+  line-height: 24px;
+}
+
+details[open] summary {
+  list-style-image: url("../../icons/light/expand_arrow_down.svg");
+}
+
+summary > p {
+  width: calc(100% - 36px);
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1366px) {
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content {
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0px;
+    inset-inline-start: -208px;
+    inline-size: 208px;
+    height: 400px;
+    overflow-y: auto;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--colorTundora);
+    border-radius: 10px;
+  }
+}

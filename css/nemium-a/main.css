@@ -1,22 +1,22 @@
 @import "./variables.css";
 @import "./header.css";
 @import "./section.css";
+@import "./footer.css";
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--colorTunder);
-  color: var(--colorWhite);
+  color: var(--colorTundora);
   min-block-size: 200vh;
-  font-family: var(--fontFamilyNunito);
-  font-size: 17px;
+  font-family: var(--fontFamilyRoboto);
+  font-size: 16px;
   margin: 0;
 }
 
 .container {
-  max-inline-size: 636px;
+  max-inline-size: 902px;
   margin: auto;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .decorator {
-  background: var(--headerGradient);
+  background: url("../../images/light/patron-1.png");
   block-size: 96px;
 }
 

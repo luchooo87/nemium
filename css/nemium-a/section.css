@@ -3,7 +3,7 @@ p {
 }
 
 summary p {
-  color: var(--colorWhite);
+  color: var(--colorDoveGray);
 }
 
 h1 {
@@ -14,11 +14,12 @@ h1 {
 h1,
 h2 {
   font-size: 24px;
+  color: var(--colorMineShaft);
 }
 
 h1 + p {
   margin-block-end: 16px;
-  font-size: 17px;
+  /*   font-size: 17px; */
 }
 
 h2 {
@@ -37,48 +38,54 @@ hr {
 }
 
 pre {
-  background: var(--colorTunder2);
-  border-radius: 8px;
+  background: var(--colorSunglow);
   padding: 40px;
-  font-family: var(--fontFamilyNunito);
   font-size: 16px;
   line-height: 24px;
   overflow: auto;
+  font-family: var(--fontFamilyRoboto);
 }
 
 blockquote {
-  background: var(--colorTunder2);
-  padding: 24px;
-  border-radius: 8px;
-  margin-block-start: 80px;
-  margin-block-end: 63px;
+  padding-left: 16px;
+  margin-block: 40px;
   margin-inline: 0;
   font-size: 17px;
+  border-left: 4px solid var(--colorMineShaft);
 }
 
 blockquote span::before {
   content: "-";
 }
 
-blockquote p {
+/* blockquote p {
   color: var(--colorWhite);
-}
+} */
 
 .section-content {
   counter-reset: titleList;
 }
 
-.section-content p {
+/* .section-content p {
   font-weight: bold;
-}
+} */
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before {
   content: counter(titleList) ". ";
+}
+
+.section-content h3::after {
+  content: "";
+  inline-size: 80px;
+  block-size: 4px;
+  background: var(--colorTundora);
+  display: block;
+  position: absolute;
 }
 
 .section-content img {
@@ -93,6 +100,11 @@ blockquote p {
 
 .section-content ul li {
   margin-block-end: 16px;
+}
+
+.section-content p span {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .slider-container {
@@ -133,38 +145,38 @@ blockquote p {
   padding: 8px;
 }
 
-.info {
-  color: var(--colorWhite);
-}
-
 .info a {
   font-family: var(--fontFamilyRoboto);
   font-size: 17px;
+  color: var(--colorBlack);
 }
 
 .form input {
   inline-size: 100%;
-  border: 1px solid var(--colorWhite);
-  border-radius: 8px;
+  border: 1px solid var(--colorDoveGray);
+  border-radius: 90px;
   background: var(--colorTunder);
-  color: var(--colorWhite);
+  color: var(--colorDoveGray);
   padding-inline: 16px;
   padding-block: 12px;
   font-size: 16px;
   font-family: var(--fontFamilyNunito);
-  display: block;
   margin-block-end: 24px;
   box-sizing: border-box;
+  display: inline;
 }
 
 .form input::placeholder {
-  color: var(--colorWhite);
+  color: var(--colorDoveGray);
 }
 
 .form input[type="submit"] {
-  background: var(--colorDogerBlue);
-  font-weight: 700;
+  background: var(--colorBlack);
+  color: var(--colorWhite);
+  font-weight: 500;
   border: none;
+  font-family: var(--fontFamilyRoboto);
+  position: relative;
 }
 
 .newsletter {
@@ -174,7 +186,7 @@ blockquote p {
 @media screen and (min-width: 992px) {
   h1 {
     margin-block-start: 64px;
-    font-size: 64px;
+    font-size: 60px;
   }
 
   h2 {
@@ -187,9 +199,24 @@ blockquote p {
 
   blockquote {
     font-size: 24px;
+    margin-block-start: 32px;
+    margin-block-end: 64px;
   }
 
   .newsletter {
     font-size: 24px;
+  }
+
+  .form {
+    margin-block-end: 113px;
+  }
+
+  .form input {
+    inline-size: 280px;
+  }
+
+  .form input[type="submit"] {
+    inline-size: 119px;
+    right: 45px;
   }
 }
