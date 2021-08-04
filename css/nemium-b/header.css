@@ -4,6 +4,7 @@ header {
 
 .header-content {
   padding-inline: 16px;
+  position: relative;
 }
 
 .header ul li {
@@ -31,21 +32,48 @@ li {
   background: var(--colorBlack);
 }
 
-@media screen and (min-width: 1366px) {
-  header {
-    inline-size: 200px;
-    position: absolute;
-    left: -300px;
-    top: 64px;
-  }
+summary {
+  list-style-image: url("../../icons/dark/expand_arrow-front.svg");
+  line-height: 24px;
+}
 
+details[open] summary {
+  list-style-image: url("../../icons/dark/expand_arrow_down.svg");
+}
+
+summary > p {
+  width: calc(100% - 36px);
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1366px) {
   .header {
     position: sticky;
-    top: 0;
+    inset-block-start: -45px;
   }
 
   .header-content {
     position: relative;
+    inset-block-start: 65px;
     padding-inline: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0px;
+    inset-inline-start: -208px;
+    inline-size: 208px;
+    height: 400px;
+    overflow-y: auto;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--colorTunder2);
   }
 }
