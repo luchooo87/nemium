@@ -32,12 +32,12 @@ li {
   background: var(--colorBlack);
 }
 
-summary {
+.list-menu summary {
   list-style-image: url("../../icons/dark/expand_arrow-front.svg");
   line-height: 24px;
 }
 
-details[open] summary {
+.list-menu details[open] summary {
   list-style-image: url("../../icons/dark/expand_arrow_down.svg");
 }
 
@@ -46,6 +46,28 @@ summary > p {
   display: inline-block;
   vertical-align: middle;
   font-weight: bold;
+}
+
+.variant summary {
+  list-style: none;
+}
+
+.list-menu {
+  display: none;
+}
+
+.summary-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--colorWhite);
+}
+
+details ul {
+  padding-inline-start: 0;
+}
+
+details ol {
+  padding-inline-start: 20px;
 }
 
 @media screen and (min-width: 1366px) {
@@ -75,5 +97,10 @@ summary > p {
 
   ::-webkit-scrollbar-thumb {
     background: var(--colorTunder2);
+  }
+
+  .list-menu {
+    display: block;
+    margin-block-start: 107px;
   }
 }
