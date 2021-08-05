@@ -31,6 +31,7 @@ li {
 .is-active {
   background: var(--colorBlack);
   color: var(--colorWhite);
+  border-radius: 4px;
 }
 
 .list-menu summary {

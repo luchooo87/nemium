@@ -30,6 +30,7 @@ li {
 
 .is-active {
   background: var(--colorBlack);
+  border-radius: 4px;
 }
 
 .list-menu summary {
