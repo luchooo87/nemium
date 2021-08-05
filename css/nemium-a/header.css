@@ -64,7 +64,7 @@ summary > p {
   header {
     position: absolute;
     inset-block-start: 0px;
-    inset-inline-start: -208px;
+    inset-inline-start: -220px;
     inline-size: 208px;
     height: 400px;
     overflow-y: auto;

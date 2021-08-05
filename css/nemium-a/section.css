@@ -15,21 +15,22 @@ h1,
 h2 {
   font-size: 24px;
   color: var(--colorMineShaft);
+  font-weight: normal;
 }
 
 h1 + p {
   margin-block-end: 16px;
-  /*   font-size: 17px; */
+  line-height: 24px;
 }
 
 h2 {
-  margin-block: 40px;
+  margin-block: 32px;
 }
 
 h3 {
   margin-block: 16px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 hr {
@@ -58,17 +59,9 @@ blockquote span::before {
   content: "-";
 }
 
-/* blockquote p {
-  color: var(--colorWhite);
-} */
-
 .section-content {
   counter-reset: titleList;
 }
-
-/* .section-content p {
-  font-weight: bold;
-} */
 
 .section-content h3 {
   counter-increment: titleList;
@@ -138,7 +131,7 @@ blockquote span::before {
 
 .bullet:hover,
 .bullet-is-select {
-  background: var(--colorWhite);
+  background: var(--colorTundora);
 }
 
 .variant li {
@@ -151,8 +144,15 @@ blockquote span::before {
   color: var(--colorBlack);
 }
 
-.form input {
+.form {
+  position: relative;
+}
+
+.form .input {
   inline-size: 100%;
+}
+
+.form input {
   border: 1px solid var(--colorDoveGray);
   border-radius: 90px;
   background: var(--colorTunder);
@@ -171,12 +171,15 @@ blockquote span::before {
 }
 
 .form input[type="submit"] {
+  inline-size: 119px;
   background: var(--colorBlack);
   color: var(--colorWhite);
   font-weight: 500;
   border: none;
   font-family: var(--fontFamilyRoboto);
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 70px;
 }
 
 .newsletter {
@@ -190,11 +193,11 @@ blockquote span::before {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   blockquote {
@@ -207,16 +210,13 @@ blockquote span::before {
     font-size: 24px;
   }
 
-  .form {
-    margin-block-end: 113px;
-  }
-
-  .form input {
+  .form .input {
     inline-size: 280px;
   }
 
   .form input[type="submit"] {
-    inline-size: 119px;
-    right: 45px;
+    top: 1px;
+    right: auto;
+    margin-left: -50px;
   }
 }
