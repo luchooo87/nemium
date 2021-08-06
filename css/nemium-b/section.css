@@ -192,4 +192,8 @@ blockquote p {
   .newsletter {
     font-size: 24px;
   }
+
+  .form {
+    margin-block-end: 80px;
+  }
 }

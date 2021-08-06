@@ -210,6 +210,10 @@ blockquote span::before {
     font-size: 24px;
   }
 
+  .form {
+    margin-block-end: 80px;
+  }
+
   .form .input {
     inline-size: 280px;
   }
