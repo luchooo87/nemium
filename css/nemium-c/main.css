@@ -1,0 +1,32 @@
+@import "./variables.css";
+@import "./header.css";
+@import "./section.css";
+@import "./footer.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--colorTundora);
+  min-block-size: 200vh;
+  font-family: var(--fontFamilyRoboto);
+  font-size: 16px;
+  margin: 0;
+}
+
+.container {
+  max-inline-size: 966px;
+  margin: auto;
+}
+
+.main-content {
+  padding-inline: 16px;
+  padding-block-start: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding-block-start: 80px;
+  }
+}
