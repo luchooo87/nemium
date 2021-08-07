@@ -1,11 +1,3 @@
-p {
-  /* color: var(--colorShadyLady); */
-}
-
-summary p {
-  /* color: var(--colorDoveGray); */
-}
-
 h1 {
   margin-block-start: 48px;
   margin-block-end: 16px;
@@ -15,7 +7,6 @@ h1,
 h2 {
   font-size: 24px;
   color: var(--colorBlack);
-  /* font-weight: normal; */
 }
 
 h1 + p {
@@ -80,15 +71,6 @@ blockquote span::before {
   content: counter(titleList) ". ";
 }
 
-/* .section-content h3::after {
-  content: "";
-  inline-size: 80px;
-  block-size: 4px;
-  background: var(--colorTundora);
-  display: block;
-  position: absolute;
-} */
-
 .section-content img {
   margin-block-start: 40px;
   max-inline-size: 100%;
@@ -110,7 +92,7 @@ blockquote span::before {
 }
 
 .section-content ul {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
 }
 
 .section-content ul li::before {
@@ -124,7 +106,6 @@ blockquote span::before {
 
 .section-content p span {
   font-weight: bold;
-  /*   font-style: italic; */
   color: var(--colorPerano);
 }
 
@@ -167,7 +148,6 @@ blockquote span::before {
 }
 
 .info a {
-  /* font-family: var(--fontFamilyRoboto); */
   font-size: 17px;
   color: var(--colorEmperor);
 }
@@ -183,28 +163,19 @@ blockquote span::before {
 .form input {
   border: 1px solid var(--colorBlack);
   border-radius: 90px;
-  /*  background: var(--colorTunder); */
-  /* color: var(--colorDoveGray); */
   padding-inline: 16px;
   padding-block: 12px;
   font-size: 16px;
-  /* font-family: var(--fontFamilyNunito); */
   margin-block-end: 24px;
   box-sizing: border-box;
   display: inline;
 }
 
-/* .form input::placeholder {
-  color: var(--colorDoveGray);
-} */
-
 .form input[type="submit"] {
   inline-size: 119px;
   background: var(--colorDodgerBlue);
   color: var(--colorWhite);
-  /*   font-weight: 500; */
   border: none;
-  /* font-family: var(--fontFamilyRoboto); */
   position: absolute;
   right: 0;
   top: 70px;
