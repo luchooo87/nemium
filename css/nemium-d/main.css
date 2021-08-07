@@ -1,0 +1,39 @@
+@import "./variables.css";
+@import "./header.css";
+@import "./section.css";
+@import "./footer.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--colorEmperor);
+  min-block-size: 200vh;
+  font-family: var(--fontFamilyRubik);
+  font-size: 16px;
+  margin: 0;
+}
+
+.container {
+  max-inline-size: 916px;
+  margin: auto;
+}
+
+.main-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.decorator {
+  block-size: 96px;
+  background: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%),
+    url("../../images/light/patron-2.png");
+  background-size: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .decorator {
+    block-size: 350px;
+  }
+}

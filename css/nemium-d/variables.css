@@ -1,0 +1,14 @@
+:root {
+  --fontFamilyRubik: "Rubik", sans-serif;
+  --colorWhite: #fff;
+  --colorBlack: #000;
+  --colorDodgerBlue: #5551ff;
+  --colorPerano: #abaaf6;
+  --colorGray: #00000033;
+  --colorEmperor: #545454;
+  /*   --colorShark: #212429;
+  --colorMineShaft: #212121;
+  --colorTundora: #424242;
+  --colorDoveGray: #616161;
+  --colorSunglow: #fec62e; */
+}
