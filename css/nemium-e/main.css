@@ -1,0 +1,29 @@
+@import "./variables.css";
+@import "./header.css";
+@import "./section.css";
+@import "./footer.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--colorPortGore);
+  color: var(--colorSpindle);
+  min-block-size: 200vh;
+  font-family: var(--fontFamilyMontserrat);
+  font-size: 17px;
+  margin: 0;
+}
+
+.container {
+  max-inline-size: 636px;
+  margin: auto;
+}
+
+.main-content {
+  padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+}

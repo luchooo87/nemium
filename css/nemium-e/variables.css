@@ -1,0 +1,13 @@
+:root {
+  --fontFamilyRoboto: "Roboto", sans-serif;
+  --fontFamilyMontserrat: "Montserrat", sans-serif;
+
+  --colorWhite: #fff;
+  --colorBlackWhite: #fffffe;
+  --colorBlack: #000;
+  --colorPortGore: #232946;
+  --colorCanCan: #d4939d;
+  --colorBeautyBush: #eebbc3;
+  --colorSpindle: #b8c1ec;
+  --colorGray: rgba(97, 97, 97, 0.2);
+}
